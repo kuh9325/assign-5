@@ -1,0 +1,10 @@
+<h1>메일이 전송되었습니다.</h1>
+<h2><% @every_post.each do |p|%></h2>
+보내는 주소: <%= p.subscriber %> <br>
+제목: <%= p.title %> <br>
+내용: <%= p.content %> <br>
+시간: <%= p.created_at %>
+<hr>
+<% end %>
+
+<a href="/">메인으로 가기</a>
